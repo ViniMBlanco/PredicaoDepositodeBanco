@@ -27,7 +27,7 @@ Para preparar os dados para a modelagem, as seguintes etapas de pré-processamen
 
 ## Modelagem e Avaliação
 
-Dois modelos de classificação foram treinados e avaliados:
+Dois modelos de classificação foram treinados e avaliados, antes e depois do SMOTE(para demonstração é usado o pós SMOTE):
 
 ### 1. Regressão Logística
 
@@ -43,17 +43,15 @@ Os resultados obtidos para ambos os modelos foram os seguintes:
 
 | Métrica           | Regressão Logística | Random Forest |
 | :---------------- | :------------------ | :------------ |
-| Acurácia          | 0.8804              | 0.9388        |
-| Precisão          | 0.8719              | 0.9257        |
-| Recall            | 0.8920              | 0.9537        |
-| F1-Score          | 0.8818              | 0.9395        |
-| ROC AUC           | 0.9479              | 0.9850        |
+| Acurácia          | 0.8970              | 0.8970        |
+| Precisão          | 0.5577              | 0.5577        |
+| Recall            | 0.5784              | 0.5784        |
 
 **Matriz de Confusão (Regressão Logística):**
 
 ```
-[[10499  1547]
- [ 1301 10607]]
+[[11299  678]
+ [ 872 715]]
 ```
 
 **Relatório de Classificação (Regressão Logística):**
@@ -61,19 +59,19 @@ Os resultados obtidos para ambos os modelos foram os seguintes:
 ```
               precision    recall  f1-score   support
 
-           0       0.89      0.87      0.88     12046
-           1       0.87      0.89      0.88     11908
+          No       0.93      0.94      0.94     11977
+         Yes       0.51      0.45      0.48      1587
 
-    accuracy                           0.88     23954
-   macro avg       0.88      0.88      0.88     23954
-weighted avg       0.88      0.88      0.88     23954
+    accuracy                           0.89     13564
+   macro avg       0.72      0.70      0.71     13564
+weighted avg       0.88      0.89      0.88     13564
 ```
 
 **Matriz de Confusão (Random Forest):**
 
 ```
-[[11153   893]
- [  551 11357]]
+[[11249   728]
+ [  669 918]]
 ```
 
 **Relatório de Classificação (Random Forest):**
@@ -81,12 +79,12 @@ weighted avg       0.88      0.88      0.88     23954
 ```
               precision    recall  f1-score   support
 
-           0       0.95      0.93      0.94     12046
-           1       0.93      0.95      0.94     11908
+          No       0.94      0.94      0.94     11977
+         Yes       0.56      0.58      0.57      1587
 
-    accuracy                           0.94     23954
-   macro avg       0.94      0.94      0.94     23954
-weighted avg       0.94      0.94      0.94     23954
+    accuracy                           0.90     13564
+   macro avg       0.75      0.76      0.75     13564
+weighted avg       0.90      0.90      0.90     13564
 ```
 
 ## Conclusão
