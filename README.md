@@ -128,12 +128,9 @@ Para executar este projeto, siga os passos abaixo:
 *   **Imbalanced-learn**: Para lidar com o desbalanceamento de classes (SMOTE).
 *   **Google Colab**: Ambiente de desenvolvimento.
 
-## Autor
+## Autores
 
-**ViniMBlanco**
+**ViniMBlanco** e **FelipeYacobian**
 
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes. (Assumindo uma licença MIT padrão, caso contrário, ajustar conforme necessário.)
 
 
